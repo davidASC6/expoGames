@@ -1,7 +1,11 @@
 .mine{
-    background-color: #FFA500
+    background-color: purple;
 
 }
 .logo{
     text-align: center
+}
+
+body{
+    background-color: rgb(56, 107, 202);
 }
