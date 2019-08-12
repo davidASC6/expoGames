@@ -1,7 +1,50 @@
 .mine{
-    background-color: #FFA500
-
+    background-color: #EF990F;
 }
+
+
 .logo{
-    text-align: center
+    text-align: center;
+    margin-bottom:10px
+}
+
+.navbar-brand {
+    color:white !important;
+}
+
+.btn {
+    color: white;
+    background-color: #EF990F;
+    border: 1px solid white;
+}
+
+.btn:hover {
+    color: #EF990F;
+    background-color: white;
+    border: 1px solid #EF990F;
+}
+
+body{
+    /* background-color: rgb(0, 132, 255); */
+    background-color: rgb(226, 225, 225);
+}
+
+.row{
+   text-align: center;
+    display: flex;
+    flex-direction:row;
+    /* align-content:right; */
+}
+
+.container{
+    border: 4px black solid;
+    width: 100%;
+    margin: auto;
+    max-width: 99%;
+}
+
+.card button {
+    border-color: orange;
+    border-width: 5px;
+    padding: 0;
 }
