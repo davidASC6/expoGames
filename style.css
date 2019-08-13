@@ -1,15 +1,9 @@
 .mine{
-<<<<<<< HEAD
     background-color: #EF990F;
-=======
-    background-color: purple;
-
->>>>>>> a818aa9417fc67fa5c1c702cdc87e9ee74b06950
 }
 
 
 .logo{
-<<<<<<< HEAD
     text-align: center;
     margin-bottom:10px
 }
@@ -43,7 +37,7 @@ body{
 }
 
 .container{
-    border: 4px black solid;
+    border: 4px orange solid;
     width: 100%;
     margin: auto;
     max-width: 99%;
@@ -53,11 +47,12 @@ body{
     border-color: orange;
     border-width: 5px;
     padding: 0;
-=======
-    text-align: center
 }
 
-body{
-    background-color: rgb(56, 107, 202);
->>>>>>> a818aa9417fc67fa5c1c702cdc87e9ee74b06950
+.col-4 {
+    margin: 10px 0;
+}
+
+.card{
+  height: 100%;
 }
