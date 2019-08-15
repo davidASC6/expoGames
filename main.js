@@ -7,7 +7,7 @@ let games = [
     desc: 'A user interactive game that allows the user to use their smart phones to play the game, the goal of the game is to slice as much fruit as possible',
     creators: ["Navid Mamoon"],
     image: "fruitsensei.png",
-    progress: 95,
+    progress: 100,
     likes: 567,
     Comments: 259,
     gameLink: "http://fruit-sensei.herokuapp.com/",
@@ -35,7 +35,7 @@ let games = [
     desc: "Space Invaders is game that puts the players space fighting skills to the test. Space Invaders takes place in an inter Galactic War between humans and Aliens, your mission, wheather you choose to accept it, is to elimenate every last Alien in sight to save humanity.  ",
     creators: ["Sai Vedagiri", "Lameck Nymbane"],
     image: "spaceinvaders.png",
-    progress: 90,
+    progress: 100,
     likes: 190,
     Comments: 365,
     gameLink: "https://lameckasc6.github.io/spaceInvaders/",
@@ -49,7 +49,7 @@ let games = [
     desc: "MASH: A Game Of Life is a digital replica of the popular grade-school randomization game! Find out your future by simply typing your name, and the amount of kids you want to have!",
     creators: ["Malachi Gardner"],
     image: "mash2.png",
-    progress: 80,
+    progress: 100,
     likes: 57,
     Comments: 16,
     gameLink: "https://malachigardnerasc6.github.io/MASH/",
@@ -91,18 +91,26 @@ let games = [
 let gameContainer = document.getElementById("games");
 let modalContainer = document.getElementById("modalContainer");
 
-loadGames(true);
+loadGames('true');
 
 function filter() {
   let choice = document.getElementById('filterSelector').value;
-  console.log(choice);
+  if (choice == 'none') {
+    loadGames('true');
+  }
+  if (choice == 'complete') { 
+    loadGames('game.progress == 100');
+  }
+  if (choice == 'in-progress') {
+    loadGames('game.progress < 100');
+  }
 }
 
 function loadGames(conditional) {
   gameContainer.innerHTML = "";
   modalContainer.innerHTML = "";
   for (game of games) {
-    if (conditional){
+    if (eval(conditional)){
       gameContainer.innerHTML +=
         `
         <div class="col-md-4">
@@ -138,7 +146,7 @@ function loadGames(conditional) {
               </button>
             </div>
             <div class="modal-body">
-              <img src="${game.image}" width="350px"><a href= "${game.LinkedIn}"><img src="LinkedIn.png" width="50px"><a/><a href="${game.github}"><img src="github.png" width="50"><a/>
+              <img src="${game.image}" width="350px"><a href= "${game.LinkedIn}"><img src="LinkedIn.png" width="50px"><a/><a href="${game.github}"><img src="github-logo-1.png" width="50"><a/>
               <p>${game.desc}</p>
             </div>
             <div id=lookingFor>Currently Looking For: ${game.lookingFor} </div>
