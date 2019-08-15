@@ -20,8 +20,14 @@
 
 .btn:hover {
     color: #EF990F;
-    background-color: white;
-    border: 1px solid #EF990F;
+    background-color: black;
+    border: 8px solid blue;
+}
+a {
+    color:white;
+}
+a:hover {
+    color: orange;
 }
 
 body{
@@ -71,4 +77,30 @@ body{
 .col-md-4{
     margin-bottom: 30px;
 
+}
+
+.modal-body{
+    background-color: black;
+    color:black;
+}
+
+p{
+    color: white;
+}
+
+#lookingFor{
+    color: black;
+}
+
+.modal-footer{
+    background-color: black;
+    color: black;
+}
+
+.modal-title{
+    padding: 1px;
+}
+
+.modal-header{
+    color: orange;
 }
