@@ -1,3 +1,5 @@
+/* DO NOT USE "ORANGE" FOR COLORS, USE "#EF990F". IT'S THE COLOR OF THE LOGO */
+
 .mine{
     background-color: #EF990F;
 }
@@ -27,7 +29,7 @@ a {
     color:white;
 }
 a:hover {
-    color: orange;
+    color:orange;
 }
 
 body{
@@ -89,7 +91,8 @@ p{
 }
 
 #lookingFor{
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 .modal-footer{
@@ -102,5 +105,22 @@ p{
 }
 
 .modal-header{
-    color: orange;
+    color: #EF990F;
 }
+
+.nav-item {
+    color: #EF990F;
+}
+
+.dropdown {
+    color: #EF990F;
+}
+
+.dropdown-toggle{
+    color: white;
+}
+
+.dropdown-toggle::after{
+    color: white;
+}
+
