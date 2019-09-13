@@ -1,7 +1,7 @@
 /* DO NOT USE "ORANGE" FOR COLORS, USE "#EF990F". IT'S THE COLOR OF THE LOGO */
 
 .mine{
-    background-color: #EF990F;
+    background-color:  rgb(98, 0, 128);
 }
 
 
@@ -16,12 +16,12 @@
 
 .btn {
     color: white;
-    background-color: #EF990F;
+    background-color:  rgb(98, 0, 128);
     border: 1px solid white;
 }
 
 .btn:hover {
-    color: #EF990F;
+    color:  rgb(98, 0, 128);
     background-color: black;
     border: 8px solid blue;
 }
@@ -29,7 +29,7 @@ a {
     color:white;
 }
 a:hover {
-    color:orange;
+    color: rgb(98, 0, 128);
 }
 
 body{
@@ -52,7 +52,7 @@ body{
 }
 
 .card button {
-    border-color: #EF990F;
+    border-color:  rgb(98, 0, 128);
     border-width: 5px;
     padding: 0;
 }
@@ -63,7 +63,7 @@ body{
 
 .card{
     margin-bottom: 10px;
-    background-color: #EF990F;
+    background-color: rgb(98, 0, 128);
   height: 100%;
 }
 
@@ -105,15 +105,15 @@ p{
 }
 
 .modal-header{
-    color: #EF990F;
+    color: rgb(98, 0, 128;
 }
 
 .nav-item {
-    color: #EF990F;
+    color:  rgb(98, 0, 128;
 }
 
 .dropdown {
-    color: #EF990F;
+    color:  rgb(98, 0, 128;
 }
 
 .dropdown-toggle{
